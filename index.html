@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha_ImageGallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Image Gallery</h1>
+       <!-- <p>CodeAlpha Frontend Development Task 1</p> -->
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search images by name...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <!-- Filter Buttons (Bonus) -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+        <button class="filter-btn" data-filter="games">Games</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Mountain Landscape">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Modern Building">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Circuit Board">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Forest Fog">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Interior Design">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Code Matrix">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="games">
+            <img src="https://i.pinimg.com/736x/75/4d/94/754d946f949352174a042512d8e5363e.jpg" alt="game colum">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="games">
+            <img src="https://i.pinimg.com/1200x/dd/b3/c3/ddb3c39a797a579966cafd85fa1e46b2.jpg" alt="game flins">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="games">
+            <img src="https://i.pinimg.com/736x/98/8b/33/988b336aea82b904ab49e1e71a67ac39.jpg" alt="game mitya">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+         <div class="gallery-item" data-category="games">
+            <img src="https://i.pinimg.com/736x/6f/0f/51/6f0f512030244123690fea5b20973913.jpg" alt="game janu_ send..">
+            <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged View">
+            <!-- Download Button -->
+            <a id="download-btn" href="" target="_blank" download class="download-btn" title="Download Image">
+                <i class="fa-solid fa-download"></i> Download
+            </a>
+        </div>
+
+        <button class="nav-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
